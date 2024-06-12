@@ -43,7 +43,7 @@
     const email = document.getElementById("email").value;
     if (!email) {
       document.getElementById("botaoLogin").disabled=true;
-    } else if {
+    } else if (validarEmail(email)) {
       document.getElementById("botaoLogin").disabled=false;
     } else {
       document.getElementById("botaoLogin").disabled=true;
