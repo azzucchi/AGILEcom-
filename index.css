@@ -10,6 +10,7 @@ body {
   }
   form {
     width: 300px;
+    border: color(srgb 255 0 0 ) ;
   }
   input {
     background-color: rgb(116, 166, 218);
@@ -23,7 +24,7 @@ body {
     width: -webkit-fill-available;
   }
   button:active{
-    opacity: 0.7;
+    opacity: 0.8;
   }
   button[disabled]{
     opacity: 0.5;

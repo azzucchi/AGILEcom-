@@ -18,14 +18,15 @@
 
     <div>
       <div><label for="email">e-mail:</label></div>
-      <input type="email" name="email" onchange="validarCampos()" id="email" placeholder="seu@email.com.br">
+      <input type="email" name="email" id="email" placeholder="seu@email.com.br" onchange="validarCampos()">
     </div>
     <div>
       <div><label for="name">Senha:</label></div>
-      <input type="password" name="senha" id="Senha" placeholder="sua_senha">
+      <input type="password" name="senha"  id="Senha" placeholder="sua_senha" onchange="validarCampos()">
     </div>
     <div>
-      <button type="button" class="btn1" onclick="alert('Ativado')" id="botaoLogin" disabled="true" >Login</button>
+      <button type="button" class="btn1" onclick="alert('Ativado')" id="botaoLogin">Login</button>
+      <script>document.getElementById("botaoLogin").disabled = true</script>
     </div>
     <div>  
       <button type="button" class="btn2" onclick="alert('Até Breve...')" >Cancelar</button>
@@ -35,28 +36,6 @@
 
 </body>
 
-<script>
-
-  function validarCampos(){
-
-    // funcao de validacao de campos
-    const emailValido = oemailEvalido;
-    document.getElementById("botaoLogin").disabled = !emailValido;
-    
-  }
-
-  function oemailEvalido(){
-    const email=document.getElementById("email").value;
-    if (!email) {
-      return false;
-    }
-    return validarEmail(email);
-  }
-
-  function validarEmail(email){
-    return /\S+@\S+\.\S+/.test(email);
-  }
-
-</script>
+<script> src="index.js" </script>
 
 </html>
