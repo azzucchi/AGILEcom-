@@ -1,6 +1,6 @@
-function validarCampos(){
+function validarCampos(valor){
 
-    alert('opa!!!')
+    alert('opa!!!');
     // funcao de validacao de campos
     // document.getElementById("botaoLogin").disabled = !emailValido;
     // const passwdValida = asenhaEvalida();
@@ -22,7 +22,7 @@ function mailEvalido(){
     if (!mail) {
       return false;
     }
-    return validarEmail(email);
+    return validarEmail(mail);
 }
 
 function validarEmail(email){
