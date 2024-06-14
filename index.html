@@ -20,11 +20,11 @@
 
     <div>
       <div><label for="email">e-mail:</label></div>
-      <input type="email" name="email" id="email" placeholder="seu@email.com.br" onchange="validarCampos(this.value)">
+      <input type="email" name="email" id="email" placeholder="seu@email.com.br" onkeyup="validarCampos(this.value)">
     </div>
     <div>
       <div><label for="name">Senha:</label></div>
-      <input type="password" name="senha"  id="Senha" placeholder="sua_senha" onchange="validarCampos(this.value)">
+      <input type="password" name="senha"  id="senha" placeholder="sua_senha" onkeyup="validarCampos(this.value)">
     </div>
     <div>
       <button type="button" class="btn1" onclick="alert('Ativado')" id="botaoLogin" disabled="true" >Login</button>
@@ -37,39 +37,6 @@
 
 </body>
 
-<script> 
-  
-  function validarCampos(valor){
-
-    // alert('opa!!!');
-    // funcao de validacao de campos
-    // document.getElementById("botaoLogin").disabled = !emailValido;
-    // const passwdValida = asenhaEvalida();
-
-    document.getElementById("botaoLogin").disabled = !mailEvalido || !asenhaEvalida;
-    //document.getElementById("botaoLogin").disabled = false;
-  }
-
-  function asenhaEvalida(){
-    const senha = document.getElementById("senha").value;
-    if (!senha) {
-      return false;
-    }
-    return true;
-  }
-
-  function mailEvalido(){
-    const mail=document.getElementById("email").value;
-    if (!mail) {
-      return false;
-    }
-    return validarEmail(mail);
-  }
-
-  function validarEmail(email){
-    return /\S+@\S+\.\S+/.test(email);
-  }
-
-</script>
+<script src="index.js"> </script>
 
 </html>

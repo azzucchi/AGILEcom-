@@ -1,30 +1,34 @@
-function validarCampos(valor){
+function validarCampos() {
 
-    alert('opa!!!');
-    // funcao de validacao de campos
-    // document.getElementById("botaoLogin").disabled = !emailValido;
-    // const passwdValida = asenhaEvalida();
+  const mailaddr = mailValid();
+  const passwdValid = passwdisValid();
+  document.getElementById('botaoLogin').disable = !mailaddr || !passwdValid;
 
-    document.getElementById("botaoLogin").disabled = !mailEvalido || !asenhaEvalida;
-    //document.getElementById("botaoLogin").disabled = false;
 }
 
-function asenhaEvalida(){
-    const senha = document.getElementById("senha").value;
-    if (!senha) {
-      return false;
-    }
-    return true;
+function mailValid(){
+
+  const email = document.getElementById('email').value;
+  if (!email){
+    return false;
+  } else {
+    return emailValido(email);
+  }
+
 }
 
-function mailEvalido(){
-    const mail=document.getElementById("email").value;
-    if (!mail) {
-      return false;
-    }
-    return validarEmail(mail);
+function passwdisValid(){
+  
+  const passwd = document.getElementById('senha').value;
+  if (!passwd) {
+    return false;
+  }
+  return true;
+
 }
 
-function validarEmail(email){
-    return /\S+@\S+\.\S+/.test(email);
+function emailValido(vmail) {
+
+  return /\S+@\S+\.\S+/.test(vmail);
+
 }
