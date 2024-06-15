@@ -2,7 +2,13 @@ function validarCampos() {
 
   const mailaddr = mailValid();
   const passwdValid = passwdisValid();
-  document.getElementById('botaoLogin').disable = !mailaddr || !passwdValid;
+  
+  if (mailaddr && passwdValid) {
+    // alert(mailaddr+" "+passwdValid);
+    document.getElementById('botaoLogin').disabled = false;
+  } else {
+    document.getElementById('botaoLogin').disabled = true;
+  }
 
 }
 
