@@ -9,10 +9,33 @@ body {
     align-content: center;
     height: 100vh;
   }
-  form {
-    width: 300px;
-    border: color(srgb 255 0 0 ) ;
+  .subtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
   }
+  .paragrafo{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+  }  
+  .cabecalho{
+    display: flex;
+    color: white;
+    background-color: rgb(16, 138, 169);
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    align-items: center;  
+    justify-content: center;
+    align-content: center;  
+  }
+  form {
+    width: 60%;
+    border-radius: 10%;
+    background-color: rgba(55, 121, 127, 0.7);
+    }
   input {
     background-color: rgb(116, 166, 218);
     padding: 5px;
@@ -22,7 +45,7 @@ body {
   }
   button {
     cursor: pointer;
-    width: -webkit-fill-available;
+    width: 100px;
   }
   button:active{
     opacity: 0.8;
