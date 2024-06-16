@@ -1,5 +1,6 @@
 body {
-    background: rgb(81, 145, 213);
+    background-image: url("imagens/TVFdo.jpeg");
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
