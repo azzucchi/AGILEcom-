@@ -16,9 +16,9 @@ function mailValid(){
 
   const email = document.getElementById('email').value;
   if (!email){
-    return false;
+     return false;
   } else {
-    return emailValido(email);
+     return emailValido(email);
   }
 
 }
