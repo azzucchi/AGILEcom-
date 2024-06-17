@@ -1,6 +1,5 @@
 body {
-    background-image: url("imagens/TVFdo.jpeg");
-    background-size: cover;
+    background-color: rgb(32, 33, 33);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -16,11 +15,13 @@ body {
     color: white;
   }
   .paragrafo{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
     color: white;
   }  
   .cabecalho{
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     color: white;
     background-color: rgb(16, 138, 169);
