@@ -12,6 +12,14 @@ function validarCampos() {
 
 }
 
+function login() {
+
+  window.location.href = " Display.html";
+  console.log('Window = ', window)
+  console.log('Location = ', window.location)
+
+}
+
 function mailValid(){
 
   const email = document.getElementById('email').value;
